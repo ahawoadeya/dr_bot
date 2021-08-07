@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>{{ title }}</title>
+    <title>DoctorBot - Intelligent Medical Diagnosis</title>
 
     <style>
         .form-actions {
@@ -24,36 +24,17 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">{{ navTitle }}</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="{{ url_for('Homepage') }}">Home <span
-                            class=" sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('About') }}">About Application</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('Contact') }}">Contact Us</a>
-                </li>
-            </ul>
-        </div>
+        <a class="navbar-brand" href="{{ url_for('Homepage') }}">DoctorBot</a>
     </nav>
     <br>
-    <div class=" row ">
+    <!-- <div class=" row ">
         <div class="col-8 ">
             <h2 class="text-right mt-3 font-weight-bolder ">{{ headText }}</h2>
         </div>
         <div class="col ">
             <img src="{{ ImagePath }} " class="img-fluid " alt="Responsive image " style="width: 100px; height:100px; ">
         </div>
-    </div>
+    </div> -->
 
 
     <br> {% block contents %}{% endblock %}
