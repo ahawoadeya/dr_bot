@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/styles.css">
     <title>DoctorBot - Intelligent Medical Diagnosis</title>
 
     <style>
@@ -27,14 +28,40 @@
             }
         }
     </style>
+
+    <style class="u-style">.u-section-2 {background-image: url("//images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/081f5dd6deaf56068788631e/pexels-photo-4167539.jpeg"); background-position: 0% 0%}
+.u-section-2 .u-sheet-1 {min-height: 658px}
+.u-section-2 .u-text-1 {font-size: 3.75rem; font-weight: 600; margin: 130px 672px 0 1px}
+.u-section-2 .u-text-2 {font-size: 1.125rem; font-style: normal; margin: 20px 634px 0 1px}
+.u-section-2 .u-btn-1 {background-image: none; text-transform: uppercase; font-weight: 700; border-style: none; letter-spacing: 2px; margin: 38px auto 60px 1px; padding: 15px 48px 16px 47px} 
+@media (max-width: 1199px){ .u-section-2 .u-sheet-1 {min-height: 542px}
+.u-section-2 .u-text-1 {margin-top: 60px; margin-right: 472px; margin-left: 0}
+.u-section-2 .u-text-2 {margin-right: 434px; margin-left: 0}
+.u-section-2 .u-btn-1 {margin-left: 0} }
+@media (max-width: 991px){ .u-section-2 .u-sheet-1 {min-height: 415px}
+.u-section-2 .u-text-1 {margin-right: 252px}
+.u-section-2 .u-text-2 {width: auto; margin-right: 365px} }
+@media (max-width: 767px){ .u-section-2 .u-sheet-1 {min-height: 311px}
+.u-section-2 .u-text-1 {font-size: 3rem; margin-right: 72px}
+.u-section-2 .u-text-2 {margin-right: 185px} }
+@media (max-width: 575px){ .u-section-2 {background-position: 78.93% 0%}
+.u-section-2 .u-sheet-1 {min-height: 196px}
+.u-section-2 .u-text-1 {width: auto; margin-right: 71px; font-size: 2.25rem}
+.u-section-2 .u-text-2 {margin-right: 71px} }</style>
 </head>
 
-<body>
+<body class="u-body">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="{{ url_for('Homepage') }}">DoctorBot</a>
     </nav>
-    <br>
-    <div class="container">
+    <section class="u-align-left u-clearfix u-image u-section-2" src="" id="carousel_2d60">
+      <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-sheet-1">
+        <h1 class="u-custom-font u-font-montserrat u-text u-title u-text-1">COVID-19 DETECTOR</h1>
+        <p class="u-large-text u-text u-text-variant u-text-2">Caring for better life. Leading the way in medical excellence</p>
+        <a href="{{ url_for('Coronavirus') }}" class="u-btn u-button-style u-white u-btn-1">Track COVID-19 Symptoms</a>
+      </div>
+    </section>
+    <!-- <div class="container">
         <br>
 
         <div class="table-responsive">
@@ -87,9 +114,7 @@
         <div class="card-footer text-muted">
             System is still under supervision
         </div>
-    </div>
-
-    <br><br>
+    </div> -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">

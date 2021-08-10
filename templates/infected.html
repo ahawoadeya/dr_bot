@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>You are Infected!!!</title>
+    <title>DoctorBot - Intelligent Medical Diagnosis</title>
     <style>
         .form-actions {
             margin: 0;
@@ -21,12 +21,12 @@
     </nav>
 
     <div class="card">
-        <h5 class="card-header text-center text-danger font-weight-bold">Danger</h5>
+        <h5 class="card-header text-center text-danger font-weight-bold">Danger!!!</h5>
         <div class="card-body">
             <h5 class="card-title text-danger text-center">You maybe suffering from {{ disease }}</h5>
             <p class="card-text text-center">Please contact nearest hospitals</p>
             <div class="form-actions">
-                <a href="{{ url_for('Homepage') }}" class="btn btn-danger">Test again to be sure</a>
+                <a href="{{ url_for('Coronavirus') }}" class="btn btn-danger">Test again to be sure</a>
             </div>
         </div>
     </div>
